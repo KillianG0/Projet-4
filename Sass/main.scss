@@ -40,28 +40,6 @@ img {
             background: var(--White, #FFF);
         }
         
-        .Fonctionnement__btn {
-            width: 100%;
-            flex-wrap: wrap;
-              gap: 20px;
-              display: flex;
-              justify-content: center;
-            
-            .Fonctionnement__lien {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: nowrap;
-                border-width: 2px;
-                border-radius: 25px;
-                background: var(--Background, #F6F6F6);
-                width: 80%;
-            height: 72.379px;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            gap: 20px;
-            text-decoration: none;
-            }
-        }
             .restau {
                 background: var(--Background, #F6F6F6);
             }
