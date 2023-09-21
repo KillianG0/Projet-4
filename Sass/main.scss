@@ -1,4 +1,7 @@
-
+@import './components/_card.scss';
+@import './components/button' ;
+@import './components/form' ;
+@import './layout/layout' ;
 * {
     font-family: 'Roboto'
 }
@@ -20,32 +23,7 @@ img {
     object-fit: cover;
 }
 @media screen and (max-width: 768px) {
- .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1em 0;
-    
-     img {
-        width: 50%;
-    }
-    .header__logo {
-        background-color: white;
-        width: 100%;
-    }
-    .header__btn-search {
-        width: 100%;
-        height: 50px;
-        gap: 5px;
-        background: var(--Grey-2, #EAEAEA)
-        }
-        .header__input {
-            background: var(--Grey-2, #EAEAEA);
-            border: none;
-            }
-        }
+
      .section1 {
             display: flex;
             flex-direction: column;
@@ -56,25 +34,7 @@ img {
                 width: 100%;
                 text-align: center;
             }
-            .section1__btn {
-                    border-width: 2px;
-                    box-sizing: border-box;
-                    border-radius: 25px;
-                    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));;
-                    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-                width: 218px;
-                height: 50px;
-                margin-bottom: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                }
-                .section1__lien {
-                    color: white;
-                    text-decoration: none;
-                    font-size: 16px
-                }
-            }
+     }
         .Fonctionnement {
             width: 100%;
             background: var(--White, #FFF);
@@ -102,7 +62,6 @@ img {
             text-decoration: none;
             }
         }
-            
             .restau {
                 background: var(--Background, #F6F6F6);
             }
@@ -113,13 +72,5 @@ img {
                 margin-bottom: 50px;
             }
             
-            .footerr {
-                display: flex;
-                color: white;
-                flex-direction: column;
-                align-items: flex-start;
-            h4 {
-                font-family: 'Shrikhand'
-            }
-    }
+          
 }

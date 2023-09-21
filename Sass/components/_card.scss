@@ -1,0 +1,62 @@
+.card {
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+img {
+width: 100%;
+border-radius: 20px 20px 0px 0px;
+height: 200px;
+}
+.card-contenu {
+text-decoration: none;
+}
+.card-titre {
+padding-left: 10px;
+margin-top: 10px;
+margin-bottom: 5px;
+font-size: 18px;
+font-weight: 700;
+}
+.card-p {
+padding-left: 10px;
+padding-bottom: 15px;
+margin: 0;
+color: #000;
+font-size: 17px;
+font-weight: 300;
+}
+}
+.carré {
+border-radius: 2px;
+background: var(--Green, #99E2D0);
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+color: var(--Green-Font, #008766);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+width: 80px;
+height: 29px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 12px;
+right: 12px;
+left: 248px;
+bottom: 209px;
+}
+.fa-heart {
+width: 22px;
+position: fixed;
+right: 25px;
+bottom: 25px;
+left: 293px;
+font-size: 30px;
+}
