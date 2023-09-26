@@ -2,6 +2,8 @@
 @import './components/button' ;
 @import './components/form' ;
 @import './layout/layout' ;
+@import './utils/mixin' ;
+@import './utils/variable' ;
 * {
     font-family: 'Roboto'
 }
@@ -39,7 +41,15 @@ img {
             width: 100%;
             background: var(--White, #FFF);
         }
-        
+        .number {
+        position:absolute;
+        border-radius:100%;
+        font-size: 17px;
+        text-align: center;
+        color:#f6f6f6;
+        padding:5px 10px 5px 10px;
+        margin-left:10px;
+        }
             .restau {
                 background: var(--Background, #F6F6F6);
             }

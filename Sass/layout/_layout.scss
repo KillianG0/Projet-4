@@ -24,3 +24,118 @@
             font-family: 'Shrikhand'
         }
 }
+/*Page du restaurant*/
+.container-menu{
+    background: $lighter-grey;
+    position:relative;
+    width:100%;
+    z-index:3;
+    margin-top:-4rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    .restaurant-menu{
+        padding-top:35px;
+       background: $lighter-grey#EAEAEA;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .resto-titre{
+        display:flex;
+        
+        color:black;
+        font-size:24px;
+        margin:0;
+    }
+}
+    
+ .repas{
+        margin-top:20px;
+        margin-left:13px;
+        .menu{
+            position:relative;
+          
+            font-weight:300;
+            margin-top:20px;
+            margin-bottom:40px;
+            padding-bottom:5px;
+            &::after{
+                position:absolute;
+                content:"";
+                width:2.5rem;
+                height:0.2rem;
+                left:0;
+                bottom:0;
+               background: $color-third #99E2D0
+            }   
+        }
+    }
+
+ .resto-img{
+        width:100%;
+        z-index:-1;
+        .photo{
+            width:100%;
+        }
+    }
+    
+      .article{
+         background:white;
+          border-radius:25px;
+     padding:10px;
+         width:93%;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:15px;
+                $lighter-grey:#EAEAEA;
+                display: flex;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                .article-name{
+                    position: relative;
+                    flex:1;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .repas-titre{
+                    text-overflow:ellipsis;
+                }
+                .repas-p{
+                    font-size:15px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .prix{
+                    margin-right:3em;
+                    display:flex;
+                    justify-content: flex-end;
+                    align-items:flex-end;
+                    font-weight: bold;
+                }
+    
+                }
+    
+            .checkbox{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                background: $color-third #99E2D0;
+                width:5rem;
+                margin:-1rem -6rem -1rem -1rem;
+                .fa-check{
+                    color:$color-third;
+                    background:white;
+                    padding:3px;
+                    border-radius:20px;
+                }
+            }
+    
+            .command{
+                width:100%;
+                display:flex;
+                justify-content: center;
+                margin-top:20px;
+            }
+    
