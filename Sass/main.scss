@@ -1,9 +1,9 @@
-@import './components/_card.scss';
+@import './utils/variable.scss' ;
+@import './utils/mixin.scss' ;
+@import './components/card.scss';
 @import './components/button.scss' ;
 @import './components/form.scss' ;
 @import './layout/layout.scss' ;
-@import './utils/mixin.scss' ;
-@import './utils/variable.scss' ;
 @import './base/base.scss' ;
 @import './components/animation' ;
 
@@ -16,12 +16,6 @@ a {
     text-decoration: none;
 }
 
-header img{
-    width: 100%;
-}
-.footerr {
-    background-color: #353535;
-}
 
 img {
     object-fit: cover;

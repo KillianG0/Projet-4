@@ -9,15 +9,6 @@
         width:18%;
         
     }
-   
-    .section1{
-        .reserve{
-            @include title-desktop;
-        }
-        .catch-phrase{
-            @include paragraphe-desktop;
-        }
-    }
     .Fonctionnement {
         width: 100%;
         display: flex;
@@ -66,10 +57,10 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom:20px;
+        padding-top: 20px;
     }
 
     .h1{
-        @include title;
         text-align:center;
         margin-top:30px;
         margin-left:45px;
@@ -78,7 +69,6 @@
     }
 
     .section1__titre{
-        @include paragraphe;
         text-align: center;
         font-weight:300;
         padding-bottom:15px;
@@ -89,7 +79,6 @@
     .notice-title{
         width:100%;
         margin-left:20px;
-        font-family: $txt-paragraphe;
         font-size:24px;
         margin-bottom: 25px;;
     }
@@ -129,14 +118,13 @@
     footer{
         align-items: center;
         padding-top: 55px;
-    h3{
+        flex-direction: row-reverse;
+    h4{
         font-size:19px;;
         margin-left:175px;
         margin-right:55px;
     }
-    h4 {
-        flex-direction: row-reverse;
-    }
+   
 
   
 }
@@ -161,4 +149,5 @@ body {
     }
 }
 }
+
 }

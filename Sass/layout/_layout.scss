@@ -5,27 +5,48 @@
     justify-content: center;
     text-align: center;
     padding-top: 20px;
-    
-     img {
-        width: 50%;
-    }
     .header__logo {
         background-color: white;
-        width: 18%;
+    width: 45%;
+    padding-bottom: 20px;
     }
-        }
-
-        footer {
-            display: flex;
-            color: white;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 25px;
-            gap: 10px;
-        h4 {
-            font-family: 'Shrikhand'
-        }
 }
+
+footer{
+    background:#353535;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:white;
+    padding-bottom:30px;
+    h4{ 
+        font-size:25px;
+        margin-left:20px;
+        font-family: "Shrikhand";
+    }
+    ul{
+        padding-left:0;
+        margin-left:20px;
+    }
+    li{
+        margin-top:12px;
+    }
+    i{
+        margin-right:9px;
+    }
+    .fa-handshake{
+        transform: rotate(45deg);
+    }
+    .fa-utensils{
+        margin-right:15px;
+    }
+    a{
+        color:white;
+        text-decoration: none;
+    }
+}
+
+
     .fa-arrow-left {
         font-size:20px;
         position:absolute;
@@ -89,35 +110,35 @@
         }
     }
     
-      .article{
-          background:white;
-             border-radius:25px;
-            padding:10px;
-            width:93%;
-             margin-bottom:15px;
-                display: flex;
-                overflow:hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                .article-name{
-                    position: relative;
-                    flex:1;
-                    overflow:hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+.article{
+    background:white;
+    border-radius:25px;
+    padding:10px;
+    width:93%;
+     margin-bottom:15px;
+     display: flex;
+     overflow:hidden;
+     text-overflow: ellipsis;
+      white-space: nowrap;
+     .article-name{
+          position: relative;
+         flex:1;
+          overflow:hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap;
                 }
-                .repas-p{
-                    font-size:15px;
-                    position: relative;
-                    flex:1;
-                    overflow:hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+     .repas-p{
+       font-size:15px;
+         position: relative;
+         flex:1;
+         overflow:hidden;
+        text-overflow: ellipsis;
+           white-space: nowrap;
                 }
-                .repas-titre {
-                        font-size:15px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap
+         .repas-titre {
+                 font-size:15px;
+              text-overflow: ellipsis;
+              white-space: nowrap
                 }
                 .prix{
                     margin-right:3em;
@@ -129,25 +150,25 @@
     
                 }
     
-            .checkbox{
-                display:flex;
-                justify-content: center;
-                align-items:center;
-                background: #99E2D0;
-                width:5rem;
-                margin:-1rem -6rem -1rem -1rem;
-                .fa-check{
-                    color:#99E2D0;
-                    background:white;
-                    padding:3px;
-                    border-radius:20px;
+    .checkbox{
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+    background: #99E2D0;
+     width:5rem;
+    margin:-1rem -6rem -1rem -1rem;
+            .fa-check{
+                color:#99E2D0;
+                 background:white;
+                 padding:3px;
+                border-radius:20px;
                 }
             }
     
-            .command{
-                width:100%;
-                display:flex;
-                justify-content: center;
-                margin-top:20px;
+ .commande{
+     width:100%;
+     display:flex;
+    justify-content: center;
+    margin-top:20px;
             }
     

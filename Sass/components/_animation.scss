@@ -1,5 +1,5 @@
 @mixin remplissage-heart{
-    color:$gradient-button;
+    color:$gradient-color;
     font-weight:bold;
     cursor:pointer;
     transition:all 2s linear;
@@ -38,7 +38,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        font-family: "Shrikhand", cursive;
+        font-family: "Shrikhand";
         font-size: 2em;
         color: #9356DC ;
         text-align:center;
