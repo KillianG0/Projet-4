@@ -2,12 +2,12 @@
 .card {
   width: 90%;
   border-radius: 15px;
-  margin-left: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   background-color: white;
   color: #000;
-  font-style: normal;
-  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }
 .card img {
   width: 100%;
@@ -32,6 +32,13 @@
   font-size: 17px;
   font-weight: 300;
 }
+.card .heart {
+  width: 22px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-size: 22px;
+}
 
 .carré {
   border-radius: 2px;
@@ -51,25 +58,15 @@
   position: fixed;
   top: 12px;
   right: 12px;
-  left: 248px;
   bottom: 209px;
-}
-
-.fa-heart {
-  width: 22px;
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  left: 293px;
-  font-size: 30px;
 }
 
 .Fonctionnement__btn {
   width: 100%;
   flex-wrap: wrap;
-  gap: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .Fonctionnement__btn .Fonctionnement__lien {
   display: flex;
@@ -81,16 +78,20 @@
   background: var(--Background, #F6F6F6);
   width: 80%;
   height: 72.379px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   gap: 20px;
   text-decoration: none;
+  color: #000;
+}
+.Fonctionnement__btn .Fonctionnement__lien i {
+  color: #7e7e7e;
+  font-size: 30px;
 }
 
 .section1__btn {
   border-width: 2px;
   box-sizing: border-box;
   border-radius: 25px;
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: linear-gradient(#ff79d9, #9356DC);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 218px;
   height: 50px;
@@ -98,6 +99,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section1__lien {
@@ -128,43 +131,58 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em 0;
+  padding-top: 20px;
 }
 .header img {
   width: 50%;
 }
 .header .header__logo {
   background-color: white;
-  width: 100%;
+  width: 18%;
 }
 
-.footerr {
+footer {
   display: flex;
   color: white;
   flex-direction: column;
   align-items: flex-start;
+  padding: 25px;
+  gap: 10px;
 }
-.footerr h4 {
+footer h4 {
   font-family: "Shrikhand";
 }
 
-/*Page du restaurant*/
+.fa-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  color: black;
+  top: 4%;
+  left: 1.5em;
+}
+
+.logo {
+  width: 45%;
+}
+
 .container-menu {
+  background: #EAEAEA;
   position: relative;
   width: 100%;
-  z-index: 3;
   margin-top: -4rem;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
 .container-menu .restaurant-menu {
   padding-top: 35px;
+  background: #EAEAEA;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .container-menu .resto-titre {
   display: flex;
+  font-family: "Shrikhand";
   color: black;
   font-size: 24px;
   margin: 0;
@@ -174,25 +192,25 @@
   margin-top: 20px;
   margin-left: 13px;
 }
-.repas .menu {
+.repas .e-p-d {
   position: relative;
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 40px;
   padding-bottom: 5px;
 }
-.repas .menu::after {
+.repas .e-p-d::after {
   position: absolute;
   content: "";
   width: 2.5rem;
   height: 0.2rem;
   left: 0;
   bottom: 0;
+  background: #99E2D0;
 }
 
 .resto-img {
   width: 100%;
-  z-index: -1;
 }
 .resto-img .photo {
   width: 100%;
@@ -203,8 +221,6 @@
   border-radius: 25px;
   padding: 10px;
   width: 93%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 15px;
   display: flex;
   overflow: hidden;
@@ -218,10 +234,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.article .repas-titre {
-  text-overflow: ellipsis;
-}
 .article .repas-p {
+  font-size: 15px;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .repas-titre {
   font-size: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -238,10 +259,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #99E2D0;
   width: 5rem;
   margin: -1rem -6rem -1rem -1rem;
 }
 .checkbox .fa-check {
+  color: #99E2D0;
   background: white;
   padding: 3px;
   border-radius: 20px;
@@ -255,15 +278,328 @@
 }
 
 * {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1290px) {
+  .header__logo {
+    width: 18%;
+  }
+  .section1 .reserve {
+    font-family: "roboto", sans-serif;
+    font-size: 3em;
+  }
+  .section1 .catch-phrase {
+    font-family: "roboto", sans-serif;
+    font-size: 1.35em;
+  }
+  .Fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  br {
+    display: none;
+  }
+  .loader h1 {
+    font-size: 8em;
+  }
+  main .Fonctionnement__btn {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+  }
+  main .resto-titre {
+    margin-left: 230px;
+  }
+  main .restoo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .restoo .card {
+    width: 36%;
+  }
+  .section1 {
+    background: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .h1 {
+    font-family: "roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-bottom: 10px;
+  }
+  .section1__titre {
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  .notice-title {
+    width: 100%;
+    margin-left: 20px;
+    font-family: "roboto", sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .number {
+    position: relative;
+    background: #9356DC;
+    border-radius: 100%;
+    font-size: 17px;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 5px 10px 5px 10px;
+    left: 10px;
+    z-index: 3;
+    margin-left: 10px;
+  }
+  .btnn {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  #Resto {
+    background: #EAEAEA;
+    padding-bottom: 40px;
+  }
+  #Resto .restaurant-title {
+    margin-top: 55px;
+  }
+  footer {
+    align-items: center;
+    padding-top: 55px;
+  }
+  footer h3 {
+    font-size: 19px;
+    margin-left: 175px;
+    margin-right: 55px;
+  }
+  footer h4 {
+    flex-direction: row-reverse;
+  }
+  .resto-img {
+    width: 100%;
+  }
+  .resto-img .photo {
+    height: 25em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .container-menu {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .container-menu .restaurant-menu {
+    justify-content: center;
+  }
+  body .container-menu .restaurant-menu .restaurant-name {
+    margin-right: 1em;
+  }
+}
+.fa-heart:hover {
+  color: linear-gradient(#ff79d9, #9356DC);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 2s linear;
+}
+
+.heart:hover {
+  background: linear-gradient(#9356DC, #ff79d9);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Fonctionnement__lien:hover {
+  background: #F5DEFF;
+}
+.Fonctionnement__lien:hover i {
+  color: #9356DC;
+}
+
+.loader {
+  background: black;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 3s forwards;
+}
+.loader h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+  color: #9356DC;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+span {
+  width: 100%;
+  opacity: 0;
+}
+
+.let1 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1s;
+}
+
+.let2 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.2s;
+}
+
+.let3 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.3s;
+}
+
+.let4 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.4s;
+}
+
+.let5 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.let6 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.6s;
+}
+
+.let7 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.7s;
+}
+
+.let8 {
+  animation: drop 1s ease-in-out;
+  animation-delay: 1.8s;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+.first {
+  animation: dishappear 2s ease-in-out;
+}
+
+.second {
+  animation: dishappear 2s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.third {
+  animation: dishappear 2s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes dishappear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.article:hover .checkbox {
+  animation: validate 1s ease-in-out;
+  animation-fill-mode: both;
+}
+.article:hover .checkbox .fa-check {
+  animation: rotor 1s ease-in-out;
+}
+
+@keyframes validate {
+  from {
+    margin-right: -6rem;
+  }
+  to {
+    margin-right: -0.7rem;
+  }
+}
+@keyframes rotor {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
+* {
+  margin: 0;
   font-family: "Roboto";
 }
 
 a {
   text-decoration: none;
-}
-
-body {
-  margin: 0;
 }
 
 header img {
@@ -286,31 +622,54 @@ img {
     flex-wrap: nowrap;
     align-items: center;
     background: var(--Background, #F6F6F6);
+    gap: 15px;
   }
-  .section1 .section1__titre {
+  .section1__titre {
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .titre-p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  h2 {
+    padding-left: 20px;
   }
   .Fonctionnement {
     width: 100%;
     background: var(--White, #FFF);
   }
+  .btnn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
   .number {
-    position: absolute;
+    position: relative;
+    background: #9356DC;
     border-radius: 100%;
     font-size: 17px;
     text-align: center;
     color: #f6f6f6;
     padding: 5px 10px 5px 10px;
+    z-index: 3;
     margin-left: 10px;
+    right: 160px;
+    top: 50px;
   }
-  .restau {
-    background: var(--Background, #F6F6F6);
-  }
-  .restoo {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 50px;
-  }
+}
+.restau {
+  background: var(--Background, #F6F6F6);
+}
+.restau .resto-titre {
+  margin-top: 55px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

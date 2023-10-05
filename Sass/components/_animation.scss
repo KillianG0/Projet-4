@@ -1,0 +1,187 @@
+@mixin remplissage-heart{
+    color:$gradient-button;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all 2s linear;
+}
+
+.fa-heart:hover{
+    @include remplissage-heart;
+}
+
+.heart:hover{
+        background:linear-gradient($color-main,$color-secondary);
+        font-weight: bold;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        }
+.Fonctionnement__lien:hover{
+        background:#F5DEFF;
+        i{
+            color: $color-main;
+        }
+    }
+.loader{
+    background: black;
+    overflow:hidden;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.2s 3s forwards;
+    h1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Shrikhand", cursive;
+        font-size: 2em;
+        color: #9356DC ;
+        text-align:center;
+        justify-content: center;
+        display: flex;
+      }
+    
+}
+
+  span {
+    width:100%;
+    opacity: 0;
+  }
+
+  .let1 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1s;
+  }
+
+  .let2 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.2s;
+  }
+
+  .let3 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.3s;
+  }
+
+  .let4 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.4s;
+
+  }
+
+  .let5 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.5s;
+  }
+
+  .let6 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.6s;
+  }
+
+  .let7 {
+    animation: drop 1s ease-in-out;
+    animation-delay: 1.7s;
+  }
+
+  .let8{
+    animation: drop 1s ease-in-out;
+    animation-delay:1.8s;
+  }
+
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+
+@keyframes fadeout{
+    0% {
+        opacity: 100%;
+    }
+    50%{
+        opacity:50%;
+    }
+    75%{
+        opacity:25%;
+    }
+    100% {
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+
+
+    .first{
+        animation:dishappear 2s ease-in-out;
+    }
+    .second{
+        animation:dishappear 2s ease-in-out;
+        animation-delay:0.3s;
+        animation-fill-mode: both;
+    }
+    .third{
+        animation:dishappear 2s ease-in-out;
+        animation-delay: 0.6s;
+        animation-fill-mode: both;
+    }
+
+@keyframes dishappear{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.article:hover{
+    .checkbox{
+        animation:validate 1s ease-in-out;
+        animation-fill-mode: both;
+        .fa-check{
+            animation:rotor 1s ease-in-out;
+        }
+    }
+}
+
+@keyframes validate{
+    from{
+        margin-right: -6rem;
+    }
+    to{
+        margin-right:-0.7rem;
+    }
+}
+
+@keyframes rotor{
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform:rotate(-720deg)
+}
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@media(min-width:1290px) {
+
+    .header__logo{
+        width:18%;
+        
+    }
+   
+    .section1{
+        .reserve{
+            @include title-desktop;
+        }
+        .catch-phrase{
+            @include paragraphe-desktop;
+        }
+    }
+    .Fonctionnement {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    br {
+        display: none;
+    }
+    .loader{
+        h1{
+            font-size:8em;
+        }
+    }
+
+        main {
+        .Fonctionnement__btn{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 70%;
+           
+        }
+        .resto-titre {
+            margin-left: 230px;
+        }
+        .restoo{
+            width:80%;
+            display:flex;
+            align-items: center;
+            flex-wrap:wrap;
+            margin-left:auto;
+            margin-right:auto;
+            .card{
+                width:36%;
+            }
+        }
+}
+
+
+    .section1{
+        background:$lighter-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+
+    .h1{
+        @include title;
+        text-align:center;
+        margin-top:30px;
+        margin-left:45px;
+        margin-right: 45px;
+        padding-bottom:10px;
+    }
+
+    .section1__titre{
+        @include paragraphe;
+        text-align: center;
+        font-weight:300;
+        padding-bottom:15px;
+    }
+
+
+
+    .notice-title{
+        width:100%;
+        margin-left:20px;
+        font-family: $txt-paragraphe;
+        font-size:24px;
+        margin-bottom: 25px;;
+    }
+
+
+    .number{
+        position:relative;
+        background:$color-main;
+        border-radius:100%;
+        font-size: 17px;
+        text-align: center;
+        color:#f6f6f6;
+        padding:5px 10px 5px 10px;
+        left: 10px;
+        z-index:3;
+        margin-left:10px;
+    }
+
+
+    .btnn{
+        width:40%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:25px;
+    }
+
+    #Resto{
+        background:$lighter-grey;
+        padding-bottom:40px;
+        .restaurant-title{
+            margin-top:55px;
+        }
+    }
+
+
+    footer{
+        align-items: center;
+        padding-top: 55px;
+    h3{
+        font-size:19px;;
+        margin-left:175px;
+        margin-right:55px;
+    }
+    h4 {
+        flex-direction: row-reverse;
+    }
+
+  
+}
+
+.resto-img{
+    width:100%;
+    .photo{
+        height:25em;
+        object-fit: cover;
+    }
+}
+body {
+.container-menu{
+    width:80%;
+    margin-right: auto;
+    margin-left:auto;
+    .restaurant-menu {
+        justify-content: center;
+        .restaurant-name{
+            margin-right:1em;
+        }
+    }
+}
+}
+}
