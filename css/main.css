@@ -114,7 +114,7 @@ footer a {
 
 .article {
   background: white;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px;
   width: 93%;
   margin-bottom: 15px;
@@ -122,6 +122,8 @@ footer a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 .article .article-name {
   position: relative;
@@ -541,6 +543,7 @@ footer a {
   }
 }
 .fa-heart:hover {
+  color: linear-gradient(#ff79d9, #9356DC);
   font-weight: bold;
   cursor: pointer;
   transition: all 2s linear;

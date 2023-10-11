@@ -97,6 +97,7 @@ footer{
                 left:0;
                 bottom:0;
                background:#99E2D0
+            
             }   
         }
     }
@@ -110,7 +111,7 @@ footer{
     
 .article{
     background:white;
-    border-radius:25px;
+    border-radius:15px;
     padding:10px;
     width:93%;
      margin-bottom:15px;
@@ -118,6 +119,8 @@ footer{
      overflow:hidden;
      text-overflow: ellipsis;
       white-space: nowrap;
+      margin-left: auto;
+      margin-right: auto;
      .article-name{
           position: relative;
          flex:1;
