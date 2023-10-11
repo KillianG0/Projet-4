@@ -5,13 +5,12 @@
     justify-content: center;
     text-align: center;
     padding-top: 20px;
-    .header__logo {
-        background-color: white;
-    width: 45%;
-    padding-bottom: 20px;
-    }
 }
-
+.header__logo {
+    background-color: white;
+width: 45%;
+padding-bottom: 20px;
+}
 footer{
     background:#353535;
     display:flex;
@@ -19,6 +18,7 @@ footer{
     justify-content: flex-start;
     color:white;
     padding-bottom:30px;
+    padding-top: 20px;
     h4{ 
         font-size:25px;
         margin-left:20px;
@@ -45,19 +45,13 @@ footer{
         text-decoration: none;
     }
 }
-
-
-    .fa-arrow-left {
-        font-size:20px;
-        position:absolute;
-        color:black;
-        top:4%;
-        left:1.5em;
+ .fa-arrow-left {
+     font-size:20px;
+      position:absolute;
+     color:black;
+     top:4%;
+     left:1.5em;
     }
-
-.logo {
-    width: 45%;
-}
 
 .container-menu {
     background: #EAEAEA;
@@ -79,6 +73,10 @@ footer{
         color:black;
         font-size:24px;
         margin:0;
+        margin-right: 20px;
+        .heart {
+            font-size: 20px;
+        }
     }
 }
     
@@ -157,13 +155,13 @@ footer{
     background: #99E2D0;
      width:5rem;
     margin:-1rem -6rem -1rem -1rem;
-            .fa-check{
-                color:#99E2D0;
-                 background:white;
-                 padding:3px;
-                border-radius:20px;
-                }
-            }
+     .fa-check{
+         color:#99E2D0;
+         background:white;
+          padding:3px;
+         border-radius:20px;
+          }
+   }
     
  .commande{
      width:100%;

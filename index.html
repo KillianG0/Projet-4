@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Sass/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d124d1a3f3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="loader">
@@ -45,40 +46,43 @@
             </div>
             </section>
             <section class="Fonctionnement">
+                <div class="fct-titre">
                 <h2>Fonctionnement</h2>
+                </div>
                 <div class="Fonctionnement__btn">
                     <div class="btnn">
-                    <p class="number">1</p><article class="Fonctionnement__lien" href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</article>
+                    <p class="number">1</p><article class="Fonctionnement__lien"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</article>
                     </div>
                     <div class="btnn">
-                    <p class="number">2</p><article class="Fonctionnement__lien" href="#"><i class="fa-solid fa-list-ul"></i>Composez votre menu</article>
+                    <p class="number">2</p><article class="Fonctionnement__lien"><i class="fa-solid fa-list-ul"></i>Composez votre menu</article>
                     </div>
                     <div class="btnn">
-                    <p class="number">3</p><article class="Fonctionnement__lien" href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</article>
+                    <p class="number">3</p><article class="Fonctionnement__lien"><i class="fa-solid fa-store"></i>Dégustez au restaurant</article>
                 </div>
                 </div>
             </section>
             <section id="#Resto" class="restau">
-                <div class="resto-titre">
+                <div class="resto-t">
                 <h2>Restaurants</h2>
                 </div>
                 <div class="restoo">
                     <article class="card">
-                        <a href="./la_palette_du_gout.html">
+                        <a href="./restaurants/la_palette_du_gout.html">
                         <img src="image/img restau/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant 1">
                         <div class="card-contenu">
                             <div class="txt">
                                 <h3 class="card-titre">La palette du goût</h3>
                                 <p class="card-p">Ménilmontant</p>
                                 <i class=" heart fa-regular fa-heart"></i>
-                                <div class="carré">Nouveau</div>
+                                <div class="carré">Nouveau
+                                </div>
                             </div>
                         </div>
+                        </a>
                     </article>
-                </a>
                     <article class="card">
-                        <a href="./la_note_enchantee.html">
-                        <img src="image/img restau/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant ">
+                        <a href="./restaurants/la_note_enchantee.html">
+                        <img src="image/img restau/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant 2">
                         <div class="card-contenu">
                             <div class="txt">
                                 <h3 class="card-titre">La Note enchantée</h3>
@@ -87,10 +91,10 @@
                                 <div class="carré">Nouveau</div>
                             </div>
                         </div>
+                        </a>
                     </article>
-                </a>
                     <article class="card">
-                        <a href="./a__la_francaise.html">
+                        <a href="./restaurants/a__la_francaise.html">
                         <img src="image/img restau/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant 3">
                         <div class="card-contenu">
                             <div class="txt">
@@ -99,11 +103,11 @@
                                 <i class=" heart fa-regular fa-heart"></i>
                             </div>
                         </div>
+                        </a>
                     </article>
-                </a>
                     <article class="card">
-                        <a href="./le_delice_des_sens.html"></a>
-                        <img src="image/img restau/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"restaurant 1">
+                        <a href="./restaurants/le_delice_des_sens.html">
+                        <img src="image/img restau/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt ="restaurant 4">
                         <div class="card-contenu">
                             <div class="txt">
                                 <h3 class="card-titre"> Le délice des sens </h3>
@@ -111,17 +115,17 @@
                                 <i class=" heart fa-regular fa-heart"></i>
                             </div>
                         </div>
+                        </a>
                     </article>
-                </a>
             </div>
             </section>
-            <footer class="footerr">
+            <footer>
                 <h4>ohmyfood</h4>
                 <ul class="footer-liste">
                     <li class="pur"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                     <li class="dup"><i class="fa-solid fa-handshake"></i>Devenir un partenaire</li>
                     <li>Mentions légales</li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="mailto:gaillardkillian06@gmail.com">Contact</a></li>
                 </ul>
             </footer>
         </main>

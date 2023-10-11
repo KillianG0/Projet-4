@@ -1,4 +1,178 @@
 @charset "UTF-8";
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header__logo {
+  background-color: white;
+  width: 45%;
+  padding-bottom: 20px;
+}
+
+footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+footer h4 {
+  font-size: 25px;
+  margin-left: 20px;
+  font-family: "Shrikhand";
+}
+footer ul {
+  padding-left: 0;
+  margin-left: 20px;
+}
+footer li {
+  margin-top: 12px;
+}
+footer i {
+  margin-right: 9px;
+}
+footer .fa-handshake {
+  transform: rotate(45deg);
+}
+footer .fa-utensils {
+  margin-right: 15px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  color: black;
+  top: 4%;
+  left: 1.5em;
+}
+
+.container-menu {
+  background: #EAEAEA;
+  position: relative;
+  width: 100%;
+  margin-top: -4rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.container-menu .restaurant-menu {
+  padding-top: 35px;
+  background: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-menu .resto-titre {
+  display: flex;
+  font-family: "Shrikhand";
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  margin-right: 20px;
+}
+.container-menu .resto-titre .heart {
+  font-size: 20px;
+}
+
+.repas {
+  margin-top: 20px;
+  margin-left: 13px;
+}
+.repas .e-p-d {
+  position: relative;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+}
+.repas .e-p-d::after {
+  position: absolute;
+  content: "";
+  width: 2.5rem;
+  height: 0.2rem;
+  left: 0;
+  bottom: 0;
+  background: #99E2D0;
+}
+
+.resto-img {
+  width: 100%;
+}
+.resto-img .photo {
+  width: 100%;
+}
+
+.article {
+  background: white;
+  border-radius: 25px;
+  padding: 10px;
+  width: 93%;
+  margin-bottom: 15px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .article-name {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .repas-p {
+  font-size: 15px;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .repas-titre {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .prix {
+  margin-right: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  width: 5rem;
+  margin: -1rem -6rem -1rem -1rem;
+}
+.checkbox .fa-check {
+  color: #99E2D0;
+  background: white;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.commande {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .card {
   width: 90%;
   border-radius: 15px;
@@ -14,6 +188,9 @@
   border-radius: 20px 20px 0px 0px;
   height: 200px;
 }
+.card .txt {
+  color: #000;
+}
 .card .card-contenu {
   text-decoration: none;
 }
@@ -28,7 +205,6 @@
   padding-left: 10px;
   padding-bottom: 15px;
   margin: 0;
-  color: #000;
   font-size: 17px;
   font-weight: 300;
 }
@@ -132,183 +308,103 @@
   margin-left: 45px;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 20px;
-}
-.header .header__logo {
-  background-color: white;
-  width: 45%;
-  padding-bottom: 20px;
-}
-
-footer {
-  background: #353535;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: white;
-  padding-bottom: 30px;
-}
-footer h4 {
-  font-size: 25px;
-  margin-left: 20px;
-  font-family: "Shrikhand";
-}
-footer ul {
-  padding-left: 0;
-  margin-left: 20px;
-}
-footer li {
-  margin-top: 12px;
-}
-footer i {
-  margin-right: 9px;
-}
-footer .fa-handshake {
-  transform: rotate(45deg);
-}
-footer .fa-utensils {
-  margin-right: 15px;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.fa-arrow-left {
-  font-size: 20px;
-  position: absolute;
-  color: black;
-  top: 4%;
-  left: 1.5em;
-}
-
-.logo {
-  width: 45%;
-}
-
-.container-menu {
-  background: #EAEAEA;
-  position: relative;
-  width: 100%;
-  margin-top: -4rem;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-}
-.container-menu .restaurant-menu {
-  padding-top: 35px;
-  background: #EAEAEA;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.container-menu .resto-titre {
-  display: flex;
-  font-family: "Shrikhand";
-  color: black;
-  font-size: 24px;
-  margin: 0;
-}
-
-.repas {
-  margin-top: 20px;
-  margin-left: 13px;
-}
-.repas .e-p-d {
-  position: relative;
-  font-weight: 300;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding-bottom: 5px;
-}
-.repas .e-p-d::after {
-  position: absolute;
-  content: "";
-  width: 2.5rem;
-  height: 0.2rem;
-  left: 0;
-  bottom: 0;
-  background: #99E2D0;
-}
-
-.resto-img {
-  width: 100%;
-}
-.resto-img .photo {
-  width: 100%;
-}
-
-.article {
-  background: white;
-  border-radius: 25px;
-  padding: 10px;
-  width: 93%;
-  margin-bottom: 15px;
-  display: flex;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.article .article-name {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.article .repas-p {
-  font-size: 15px;
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.article .repas-titre {
-  font-size: 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.article .prix {
-  margin-right: 3em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: bold;
-}
-
-.checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #99E2D0;
-  width: 5rem;
-  margin: -1rem -6rem -1rem -1rem;
-}
-.checkbox .fa-check {
-  color: #99E2D0;
-  background: white;
-  padding: 3px;
-  border-radius: 20px;
-}
-
-.commande {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 * {
   margin: 0;
   overflow-x: hidden;
 }
 
+@media (min-width: 1024px) {
+  .section1 {
+    background: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .section1__titre {
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  .Fonctionnement {
+    flex-direction: column;
+  }
+  .fct-titre {
+    padding-left: 140px;
+    padding-bottom: 20px;
+  }
+  .btnn {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .Fonctionnement__btn {
+    flex-direction: row;
+  }
+  .number {
+    position: relative;
+    background: #9356DC;
+    border-radius: 100%;
+    font-size: 17px;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 5px 10px 5px 10px;
+    left: 10px;
+    z-index: 3;
+    margin-left: 10px;
+  }
+  .resto-t {
+    padding-left: 140px;
+    padding-bottom: 20px;
+  }
+  .restoo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restoo .card {
+    width: 36%;
+  }
+  .resto-img {
+    width: 100%;
+  }
+  .resto-img .photo {
+    height: 25em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  footer h4 {
+    font-size: 19px;
+    margin-left: 175px;
+    margin-right: 55px;
+  }
+  footer .footer-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .pur {
+    margin-left: 25px;
+  }
+  footer .dup {
+    margin-right: 30px;
+    overflow: hidden;
+  }
+  footer li {
+    margin-left: 25px;
+  }
+}
 @media (min-width: 1290px) {
   .header__logo {
     width: 18%;
@@ -321,6 +417,9 @@ footer a {
     justify-content: center;
     align-content: center;
   }
+  .fct-titre {
+    padding-left: 40px;
+  }
   br {
     display: none;
   }
@@ -330,10 +429,11 @@ footer a {
   main .Fonctionnement__btn {
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 70%;
+    width: 75%;
+    padding-top: 20px;
   }
-  main .resto-titre {
-    margin-left: 230px;
+  main .resto-t {
+    padding-left: 270px;
   }
   main .restoo {
     width: 80%;
@@ -342,9 +442,10 @@ footer a {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
   }
   main .restoo .card {
-    width: 36%;
+    width: 40%;
   }
   .section1 {
     background: #EAEAEA;
@@ -391,22 +492,30 @@ footer a {
     align-items: center;
     margin-bottom: 25px;
   }
-  #Resto {
-    background: #EAEAEA;
-    padding-bottom: 40px;
-  }
-  #Resto .restaurant-title {
-    margin-top: 55px;
-  }
   footer {
     align-items: center;
-    padding-top: 55px;
     flex-direction: row-reverse;
   }
   footer h4 {
     font-size: 19px;
     margin-left: 175px;
     margin-right: 55px;
+  }
+  footer .footer-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .pur {
+    margin-left: 25px;
+  }
+  footer .dup {
+    margin-right: 30px;
+    overflow: hidden;
+  }
+  footer li {
+    margin-left: 25px;
   }
   .resto-img {
     width: 100%;
@@ -426,6 +535,9 @@ footer a {
   }
   body .container-menu .restaurant-menu .restaurant-name {
     margin-right: 1em;
+  }
+  .heart {
+    font-size: 22px;
   }
 }
 .fa-heart:hover {
@@ -634,6 +746,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-top: 10px;
   }
   .titre-p {
     font-size: 18px;
@@ -643,10 +756,14 @@ img {
   }
   h2 {
     padding-left: 20px;
+    padding-bottom: 20px;
   }
   .Fonctionnement {
     width: 100%;
     background: var(--White, #FFF);
+  }
+  .fct-titre {
+    padding-top: 20px;
   }
   .btnn {
     width: 100%;
@@ -669,11 +786,11 @@ img {
     right: 160px;
     top: 50px;
   }
-}
-.restau {
-  background: var(--Background, #F6F6F6);
-}
-.restau .resto-titre {
-  margin-top: 55px;
-  margin-bottom: 20px;
+  .restau {
+    background: var(--Background, #F6F6F6);
+  }
+  .restau .resto-titre {
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

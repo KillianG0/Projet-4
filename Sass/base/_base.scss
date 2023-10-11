@@ -2,10 +2,100 @@
     margin: 0;
     overflow-x: hidden;
 }
-
-@media(min-width:1290px) {
-
-    .header__logo{
+@media(min-width:1024px) {
+    .section1{
+        background:$lighter-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:20px;
+        padding-top: 20px;
+    }
+    .section1__titre{
+        text-align: center;
+        font-weight:300;
+        padding-bottom:15px;
+    }
+    .Fonctionnement {
+        flex-direction: column;
+    }
+    .fct-titre {
+        padding-left: 140px;
+        padding-bottom: 20px;
+    }
+    
+    .btnn{
+        width:40%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:25px;
+    }
+    .Fonctionnement__btn {
+        flex-direction: row;
+    }
+    .number{
+        position:relative;
+        background:$color-main;
+        border-radius:100%;
+        font-size: 17px;
+        text-align: center;
+        color:#f6f6f6;
+        padding:5px 10px 5px 10px;
+        left: 10px;
+        z-index:3;
+        margin-left:10px;
+    }
+    .resto-t {
+        padding-left: 140px;
+        padding-bottom: 20px;
+    }
+    .restoo{
+        width:80%;
+        display:flex;
+        align-items: center;
+        flex-wrap:wrap;
+        margin-left:auto;
+        margin-right:auto;
+        .card{
+            width:36%;
+        }
+    }
+    .resto-img{
+        width:100%;
+        .photo{
+            height:25em;
+            object-fit: cover;
+        }
+    }
+footer{
+    align-items: center;
+    flex-direction: row-reverse;
+h4{
+    font-size:19px;;
+    margin-left:175px;
+    margin-right:55px;
+}
+.footer-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pur {
+    margin-left: 25px;
+}
+.dup {
+    margin-right: 30px;
+    overflow: hidden;
+}
+li {
+    margin-left: 25px;
+}
+} 
+}
+@media(min-width:1290px) {  
+.header__logo{
         width:18%;
         
     }
@@ -16,6 +106,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+    }
+    .fct-titre {
+        padding-left: 38px;
     }
     
     br {
@@ -31,11 +124,12 @@
         .Fonctionnement__btn{
             flex-direction: row;
             flex-wrap: nowrap;
-            width: 70%;
+            width: 76%;
+            padding-top: 20px;
            
         }
-        .resto-titre {
-            margin-left: 230px;
+        .resto-t{
+            padding-left: 270px;
         }
         .restoo{
             width:80%;
@@ -44,14 +138,14 @@
             flex-wrap:wrap;
             margin-left:auto;
             margin-right:auto;
+            padding-top: 20px;
             .card{
-                width:36%;
+                width:40%;
             }
         }
 }
 
-
-    .section1{
+ .section1{
         background:$lighter-grey;
         display: flex;
         flex-direction: column;
@@ -105,29 +199,33 @@
         align-items: center;
         margin-bottom:25px;
     }
-
-    #Resto{
-        background:$lighter-grey;
-        padding-bottom:40px;
-        .restaurant-title{
-            margin-top:55px;
-        }
-    }
-
-
+    
     footer{
         align-items: center;
-        padding-top: 55px;
         flex-direction: row-reverse;
     h4{
         font-size:19px;;
         margin-left:175px;
         margin-right:55px;
     }
-   
+    .footer-liste {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .pur {
+        margin-left: 25px;
+    }
+    .dup {
+        margin-right: 30px;
+        overflow: hidden;
+    }
+    li {
+        margin-left: 25px;
+    }
+    } 
 
-  
-}
 
 .resto-img{
     width:100%;
@@ -149,5 +247,11 @@ body {
     }
 }
 }
-
+.heart {
+    font-size: 22px;
 }
+}
+
+
+
+

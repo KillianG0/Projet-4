@@ -6,20 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d124d1a3f3.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Sass/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
         <header class="header">
-            <a href="index.html" class="backtoindex"><i class="fa-solid fa-arrow-left"></i></a>
-            <img class="header__logo" src="image/logo/ohmyfood.png" alt="logo">
+            <a href="../index.html" class="backtoindex"><i class="fa-solid fa-arrow-left"></i></a>
+            <img class="header__logo" src="../image/logo/ohmyfood.png" alt="logo">
         </header>
         <div class="resto-img">
-            <img class="photo" src="image/img restau/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="la photo du restaurant">
+            <img class="photo" src="../image/img restau/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="la photo du restaurant">
         </div>
         <main class="container-menu">
             <div class="restaurant-menu">
@@ -123,18 +122,21 @@
                             <div class="checkbox">
                                 <i class="fa-solid fa-check"></i>
                             </div>                                      
-                        </article>                                                                             
+                        </article>  
+                        </div>                                                                           
                 </div>
             </div>
             <div class="commande">
                 <a class="commande-btn section1__btn" href="#">Commander</a>
             </div>
         </main>
-        <footer class="footerr">
-            <h4>Ohmyfood</h4>
-            <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant </p>
-            <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire </p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
+        <footer>
+            <h4>ohmyfood</h4>
+            <ul class="footer-liste">
+                <li class="pur"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                <li class="dup"><i class="fa-solid fa-handshake"></i>Devenir un partenaire</li>
+                <li>Mentions légales</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </footer>
     </body>

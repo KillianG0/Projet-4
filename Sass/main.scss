@@ -1,9 +1,9 @@
 @import './utils/variable.scss' ;
 @import './utils/mixin.scss' ;
+@import './layout/layout.scss' ;
 @import './components/card.scss';
 @import './components/button.scss' ;
 @import './components/form.scss' ;
-@import './layout/layout.scss' ;
 @import './base/base.scss' ;
 @import './components/animation' ;
 
@@ -22,21 +22,22 @@ img {
 }
 @media screen and (max-width: 768px) {
 
-     .section1 {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            background: var(--Background, #F6F6F6);
-            gap: 15px;
-     }
-     .section1__titre {
-                width: 100%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                gap: 15px
-            }
+.section1 {
+    display: flex;
+    flex-direction: column;
+     flex-wrap: nowrap;
+     align-items: center;
+     background: var(--Background, #F6F6F6);
+     gap: 15px;
+}
+.section1__titre {
+     width: 100%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap:15px;
+     padding-top: 10px;
+      }
     .titre-p {
     font-size: 18px;
     text-align: center;
@@ -45,10 +46,14 @@ img {
             }
      h2 {
         padding-left: 20px;
+        padding-bottom: 20px;
      }
         .Fonctionnement {
             width: 100%;
             background: var(--White, #FFF);
+        }
+        .fct-titre {
+            padding-top: 20px;
         }
         .btnn {
             width: 100%;
@@ -71,7 +76,7 @@ img {
     right: 160px;
     top: 50px;
 }
-        }
+        
   .restau {
  background: var(--Background, #F6F6F6); 
     .resto-titre {
@@ -79,5 +84,5 @@ img {
         margin-bottom: 20px;
     }
   }
-
+}
         
