@@ -29,6 +29,7 @@ img {
      align-items: center;
      background: var(--Background, #F6F6F6);
      gap: 15px;
+     padding-top: 10px;
 }
 .section1__titre {
      width: 100%;
@@ -42,11 +43,12 @@ img {
     font-size: 18px;
     text-align: center;
     font-weight: 300;
-    padding-bottom: 15px;
+padding-bottom: 15px;
             }
      h2 {
         padding-left: 20px;
         padding-bottom: 20px;
+        padding-top: 20px;
      }
         .Fonctionnement {
             width: 100%;
