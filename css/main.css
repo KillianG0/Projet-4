@@ -100,7 +100,6 @@ footer a {
   content: "";
   width: 2.5rem;
   height: 0.2rem;
-  left: 0;
   bottom: 0;
   background: #99E2D0;
 }
@@ -166,6 +165,10 @@ footer a {
   background: white;
   padding: 3px;
   border-radius: 20px;
+}
+
+.menu {
+  padding-right: 15px;
 }
 
 .commande {
@@ -315,7 +318,7 @@ footer a {
   overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (max-width: 1289px) and (min-width: 769px) {
   .section1 {
     background: #EAEAEA;
     display: flex;
@@ -405,6 +408,12 @@ footer a {
   }
   footer li {
     margin-left: 25px;
+  }
+  .e-p-d {
+    padding-left: 30px;
+  }
+  .e-p-d::after {
+    left: 30px;
   }
 }
 @media (min-width: 1290px) {
@@ -538,11 +547,18 @@ footer a {
   body .container-menu .restaurant-menu .restaurant-name {
     margin-right: 1em;
   }
+  .e-p-d {
+    padding-left: 30px;
+  }
+  .e-p-d::after {
+    left: 30px;
+  }
   .heart {
     font-size: 22px;
   }
 }
 .fa-heart:hover {
+  color: linear-gradient(#ff79d9, #9356DC);
   font-weight: bold;
   cursor: pointer;
   transition: all 2s linear;
@@ -788,6 +804,9 @@ img {
     margin-left: 10px;
     right: 160px;
     top: 50px;
+  }
+  .e-p-d::after {
+    left: 0;
   }
   .restau {
     background: var(--Background, #F6F6F6);

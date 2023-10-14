@@ -78,7 +78,11 @@ padding-bottom: 15px;
     right: 160px;
     top: 50px;
 }
-        
+.e-p-d{
+    &::after{
+        left:0
+    }   
+}
   .restau {
  background: var(--Background, #F6F6F6); 
     .resto-titre {

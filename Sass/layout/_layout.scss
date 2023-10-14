@@ -94,7 +94,6 @@ footer{
                 content:"";
                 width:2.5rem;
                 height:0.2rem;
-                left:0;
                 bottom:0;
                background:#99E2D0
             
@@ -165,7 +164,9 @@ footer{
          border-radius:20px;
           }
    }
-    
+    .menu {
+        padding-right: 15px;
+    }
  .commande{
      width:100%;
      display:flex;
